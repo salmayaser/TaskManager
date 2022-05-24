@@ -23,6 +23,7 @@ export class TaskService {
     illo soluta similique facere corrupti. Consequuntur ad quisquam atque saepe.`,
           status: 'Todo',
         },
+
         {
           id: 2,
           title: 'fugiat veniam minus',
@@ -38,6 +39,38 @@ export class TaskService {
     ducimus, odio perspiciatis architecto ipsum iure recusandae natus pariatur
     illo soluta similique facere corrupti. Consequuntur ad quisquam atque saepe.`,
           status: 'Done',
+        },
+        {
+          id: 4,
+          title: 'et porro tempora',
+          description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eum minima
+    ducimus, odio perspiciatis architecto ipsum iure recusandae natus pariatur
+    illo soluta similique facere corrupti. Consequuntur ad quisquam atque saepe.`,
+          status: 'Done',
+        },
+        {
+          id: 5,
+          title: 'et porro tempora',
+          description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eum minima
+    ducimus, odio perspiciatis architecto ipsum iure recusandae natus pariatur
+    illo soluta similique facere corrupti. Consequuntur ad quisquam atque saepe.`,
+          status: 'Done',
+        },
+        {
+          id: 6,
+          title: 'et porro tempora',
+          description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eum minima
+    ducimus, odio perspiciatis architecto ipsum iure recusandae natus pariatur
+    illo soluta similique facere corrupti. Consequuntur ad quisquam atque saepe.`,
+          status: 'Todo',
+        },
+        {
+          id: 7,
+          title: 'et porro tempora',
+          description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eum minima
+    ducimus, odio perspiciatis architecto ipsum iure recusandae natus pariatur
+    illo soluta similique facere corrupti. Consequuntur ad quisquam atque saepe.`,
+          status: 'Todo',
         },
       ];
 
