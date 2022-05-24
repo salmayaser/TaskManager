@@ -29,6 +29,6 @@ export class ViewTaskComponent implements OnInit {
   }
 
   closeDialog() {
-    this.dialogRef.close('kkk');
+    this.dialogRef.close();
   }
 }

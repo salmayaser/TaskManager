@@ -1,16 +1,14 @@
+import { AppModule } from './app.module';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { By } from '@angular/platform-browser';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule, AppModule],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -25,11 +23,10 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('task-manager');
   });
-
-  it('should render title', () => {
+  it('should has a heading include task board', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('task-manager app is running!');
+    const el = fixture.debugElement;
+    const heading = el.query(By.css('.app h1')).nativeElement.innerText;
+    expect(heading).toBe('Task Board');
   });
 });
