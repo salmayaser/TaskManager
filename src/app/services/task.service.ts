@@ -17,7 +17,7 @@ export class TaskService {
     : [
         {
           id: 1,
-          title: 'Get To Work',
+          title: 'delectus aut autem',
           description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eum minima
     ducimus, odio perspiciatis architecto ipsum iure recusandae natus pariatur
     illo soluta similique facere corrupti. Consequuntur ad quisquam atque saepe.`,
@@ -25,7 +25,7 @@ export class TaskService {
         },
         {
           id: 2,
-          title: 'Get Groceries',
+          title: 'fugiat veniam minus',
           description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eum minima
     ducimus, odio perspiciatis architecto ipsum iure recusandae natus pariatur
     illo soluta similique facere corrupti. Consequuntur ad quisquam atque saepe.`,
@@ -33,7 +33,7 @@ export class TaskService {
         },
         {
           id: 3,
-          title: 'Get ',
+          title: 'et porro tempora',
           description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eum minima
     ducimus, odio perspiciatis architecto ipsum iure recusandae natus pariatur
     illo soluta similique facere corrupti. Consequuntur ad quisquam atque saepe.`,
@@ -41,7 +41,7 @@ export class TaskService {
         },
       ];
 
-  private tasks$: BehaviorSubject<Task[]> = new BehaviorSubject(this.tasks);
+  public tasks$: BehaviorSubject<Task[]> = new BehaviorSubject(this.tasks);
 
   getAllTasks(): Observable<Task[]> {
     return this.tasks$;
