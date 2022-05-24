@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="title">
+    <h1 class="title">{{ task.title }}</h1>
+    <span [class]="task.status">{{ task.status }}</span>
+  </div>
+  <span class="desc-head">Description:</span>
+  <p class="desc">
+    {{ task.description }}
+  </p>
+
+  <div class="d-flex justify-content-end">
+    <button
+      type="submit"
+      class="m-2"
+      mat-raised-button
+      color="primary"
+      (click)="closeDialog()"
+    >
+      Close
+    </button>
+  </div>
+</div>

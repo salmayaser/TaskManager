@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+
+.head .mat-flat-button {
+  min-width: 0px;
+  line-height: 0px;
+  padding: 9px 14px !important;
+}
+
+.mat-form-field {
+  width: 100% !important;
+}

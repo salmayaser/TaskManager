@@ -1,0 +1,28 @@
+.desc-head {
+  font-size: 18px;
+  color: #3f51b5;
+  font-weight: 600;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Todo {
+  background-color: #d2608c3c;
+  color: #ea4c89;
+  padding: 7px 25px;
+  border-radius: 7px;
+}
+.Progress {
+  background-color: #9891e36b;
+  color: #746ccf;
+  padding: 7px 25px;
+  border-radius: 7px;
+}
+.Done {
+  background-color: #8de09b80;
+  color: #61a76d;
+  padding: 7px 25px;
+  border-radius: 7px;
+}

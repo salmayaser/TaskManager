@@ -1,0 +1,43 @@
+<div class="container">
+  <h2>Add New Task</h2>
+  <div mt-3>
+    <form>
+      <mat-form-field>
+        <mat-label>Task Title</mat-label>
+        <input type="text" matInput [formControl]="titleCtrl" />
+
+        <mat-error *ngIf="titleCtrl.hasError('required')">
+          Title is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="mt-4">
+        <mat-label>Description</mat-label>
+        <textarea matInput [formControl]="descCtrl"></textarea>
+        <mat-error *ngIf="descCtrl.hasError('required')">
+          Description is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <div class="d-flex justify-content-end">
+        <button
+          type="button"
+          (click)="closeDialog()"
+          mat-raised-button
+          class="m-2"
+        >
+          Cancel
+        </button>
+        <button
+          (click)="addNewTask()"
+          type="button"
+          class="m-2"
+          mat-raised-button
+          color="primary"
+        >
+          Add
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
