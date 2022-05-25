@@ -49,27 +49,28 @@ export class ListsComponent implements OnInit {
 
   openDialog() {
     this.dialog.open(AddTodoComponent, {
-      width: '50%',
+      minWidth: '50%',
+
       data: this.tasks.length,
     });
   }
 
   openView() {
     this.dialog.open(ViewTaskComponent, {
-      width: '50%',
+      minWidth: '50%',
       data: this.currentId,
     });
   }
   openEdit() {
     this.dialog.open(EditComponent, {
-      width: '50%',
+      minWidth: '50%',
       data: this.currentId,
     });
     console.log(this.currentId);
   }
   openDelete() {
     this.dialog.open(DeleteComponent, {
-      width: '500px',
+      minWidth: '500px',
       data: this.currentId,
     });
   }
